@@ -1,0 +1,17 @@
+body{
+    padding-top: 10px;
+}
+
+.menu-not-found{
+    display: none;
+}
+
+.menu-details {
+    display: none;
+}
+
+
+.menu-description{
+    font-size: 16px;
+    font-style: arial;
+}

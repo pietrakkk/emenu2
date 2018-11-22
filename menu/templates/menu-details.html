@@ -1,0 +1,44 @@
+{% include 'base.html' %}
+
+<div class="container-fluid">
+    <div class="col-md-12">
+        <a href="/"> <- Powrót</a>
+    </div>
+    <div class="col-md-12">
+        <h2 class="menu-name">{{object.name}}</h2>
+        <hr class="divider">
+        <p class="menu-description">{{object.description}}</p>
+    </div>
+    <div class="col-md-12">
+        <h3>Karta dań:</h3>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nazwa</th>
+                <th scope="col">Czas przygotowania</th>
+                <th scope="col">Danie vegetariańskie</th>
+                <th scope="col">Cena</th>
+            </tr>
+            </thead>
+            <tbody class="dish-row">
+
+            {% for dish in object.dishes.all %}
+            <tr>
+                <th scope="row">{{dish.id}}</th>
+                <td>{{ dish.name }}</td>
+                <td>{{ dish.preparation_time }}</td>
+                <td>
+                    {% if dish.id_vegetarian %}
+                    Tak
+                    {% else %}
+                    Nie
+                    {% endif %}
+                </td>
+                <td>{{ dish.price }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>

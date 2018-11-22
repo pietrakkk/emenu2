@@ -1,0 +1,76 @@
+{% include 'base.html' %}
+
+<div class="container-fluid">
+    <div class="menu-list">
+        <table class="table table-bordered table-hover">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col"><a class="menu"
+                                   href="?page={{ page_obj.number }}&order_by=name" data-sortable="true">Nazwa</a></th>
+                <th scope="col"><a class="menu"
+                                   href="?page={{ page_obj.number }}&order_by=creation_date">Data
+                    dodania</a></th>
+                <th scope="col"><a class="menu"
+                                   href="?page={{ page_obj.number }}&order_by=modification_date">Data
+                    modyfikacji</a></th>
+                <th scope="col"><a class="menu"
+                                   href="?page={{ page_obj.number }}&order_by=dishes_count">Ilość
+                    dań</a></th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for menu in object_list %}
+            <tr class="menu-item">
+                <th scope="row">{{menu.id}}</th>
+                <td>{{ menu.name }}</td>
+                <td>{{ menu.creation_date|date }}</td>
+                <td>{{ menu.modification_date|date }}</td>
+                <td>{{ menu.dishes_count }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <ul class="pagination">
+            {% if page_obj.has_previous %}
+            <li>
+                <span><a id="prev" href="?page={{ page_obj.previous_page_number }}">< Poprzednia</a></span>
+            </li>
+            {% endif %}
+            <li class="">
+                <span>Strona {{ page_obj.number }} z {{ page_obj.paginator.num_pages }}</span>
+            </li>
+            {% if page_obj.has_next %}
+            <li>
+                <span><a id="next" href="?page={{ page_obj.next_page_number }}">Następna ></a></span>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+    <div class="menu-details">
+        <div class="col-md-12">
+            <a href="/"> <- Powrót</a>
+        </div>
+        <div class="col-md-12">
+            <h2 class="menu-name"></h2>
+            <hr class="divider">
+            <p class="menu-description"></p>
+        </div>
+        <div class="col-md-12">
+            <h3>Karta dań:</h3>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nazwa</th>
+                    <th scope="col">Czas przygotowania</th>
+                    <th scope="col">Danie vegetariańskie</th>
+                    <th scope="col">Cena</th>
+                </tr>
+                </thead>
+                <tbody class="dish-row">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
