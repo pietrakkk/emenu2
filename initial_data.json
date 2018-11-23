@@ -1,0 +1,309 @@
+[
+  {
+    "model": "menu.menu",
+    "pk": 1,
+    "fields": {
+      "creation_date": "2018-11-21T19:41:26.776Z",
+      "modification_date": "2018-11-21T19:51:57.213Z",
+      "description": "Smakowite menu \u015bwi\u0105teczne",
+      "name": "Menu \u015bwi\u0105teczne",
+      "dishes": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "menu.menu",
+    "pk": 2,
+    "fields": {
+      "creation_date": "2018-11-21T22:00:18.036Z",
+      "modification_date": "2018-11-21T22:00:18.036Z",
+      "description": "Witamy w krainie menu wielkanocnego. Prezentujemy najnowsze trendy.",
+      "name": "Menu wielkanocne nowa ods\u0142ona",
+      "dishes": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "menu.menu",
+    "pk": 3,
+    "fields": {
+      "creation_date": "2018-11-21T22:35:53.903Z",
+      "modification_date": "2018-11-21T22:35:53.903Z",
+      "description": "Nibywa\u0142e menu okazyjne",
+      "name": "Menu okazyjne",
+      "dishes": [
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "menu.menu",
+    "pk": 4,
+    "fields": {
+      "creation_date": "2018-11-21T22:36:17.800Z",
+      "modification_date": "2018-11-21T22:36:17.801Z",
+      "description": "Tanio, smakowicie i \u015bwie\u017co",
+      "name": "Menu po tanio\u015bci",
+      "dishes": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "model": "menu.menu",
+    "pk": 5,
+    "fields": {
+      "creation_date": "2018-11-21T22:36:37.154Z",
+      "modification_date": "2018-11-21T22:36:37.154Z",
+      "description": "Mmmm......",
+      "name": "Menu krakowskie",
+      "dishes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "menu.menu",
+    "pk": 6,
+    "fields": {
+      "creation_date": "2018-11-21T22:36:53.132Z",
+      "modification_date": "2018-11-21T22:36:53.132Z",
+      "description": "asd",
+      "name": "Menu czeskie",
+      "dishes": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "menu.menu",
+    "pk": 7,
+    "fields": {
+      "creation_date": "2018-11-21T22:37:07.064Z",
+      "modification_date": "2018-11-21T22:37:07.064Z",
+      "description": "asd",
+      "name": "Menu z\u0105browskie",
+      "dishes": [
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "model": "menu.menu",
+    "pk": 8,
+    "fields": {
+      "creation_date": "2018-11-21T22:37:23.884Z",
+      "modification_date": "2018-11-21T22:37:23.884Z",
+      "description": "asd",
+      "name": "Cenowy hit",
+      "dishes": [
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "model": "menu.menu",
+    "pk": 9,
+    "fields": {
+      "creation_date": "2018-11-21T22:37:46.090Z",
+      "modification_date": "2018-11-21T22:37:46.090Z",
+      "description": "Lorem ipsum",
+      "name": "Menu lorem ipsum",
+      "dishes": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "menu.menu",
+    "pk": 10,
+    "fields": {
+      "creation_date": "2018-11-21T22:37:57.336Z",
+      "modification_date": "2018-11-21T22:37:57.336Z",
+      "description": "dsdsada",
+      "name": "Menu wa\u017cne",
+      "dishes": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "menu.menu",
+    "pk": 11,
+    "fields": {
+      "creation_date": "2018-11-22T13:41:44.377Z",
+      "modification_date": "2018-11-22T13:41:44.377Z",
+      "description": "No puste b\u0119dzie",
+      "name": "Menu czwartkowe puste",
+      "dishes": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "menu.menu",
+    "pk": 12,
+    "fields": {
+      "creation_date": "2018-11-23T17:02:14.306Z",
+      "modification_date": "2018-11-23T17:02:14.306Z",
+      "description": "Wy\u015bmienite potrawy przepe\u0142nione znakomito\u015bci\u0105",
+      "name": "Znakomite menu",
+      "dishes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "menu.menu",
+    "pk": 13,
+    "fields": {
+      "creation_date": "2018-11-23T17:04:41.596Z",
+      "modification_date": "2018-11-23T17:04:41.596Z",
+      "description": "Najnowsze potrawy",
+      "name": "Najnowsze menu",
+      "dishes": [
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "model": "menu.menu",
+    "pk": 14,
+    "fields": {
+      "creation_date": "2018-11-23T17:05:29.497Z",
+      "modification_date": "2018-11-23T17:05:29.497Z",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tortor eros, sodales non viverra ut, volutpat at sapien.",
+      "name": "Mi\u0119sne menu",
+      "dishes": [
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "model": "menu.menu",
+    "pk": 15,
+    "fields": {
+      "creation_date": "2018-11-23T17:05:44.762Z",
+      "modification_date": "2018-11-23T17:05:44.762Z",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tortor eros, sodales non viverra ut, volutpat at sapien.",
+      "name": "Same zupy",
+      "dishes": [
+        1,
+        6
+      ]
+    }
+  },
+  {
+    "model": "menu.dish",
+    "pk": 1,
+    "fields": {
+      "creation_date": "2018-11-21T19:40:31.530Z",
+      "modification_date": "2018-11-21T19:40:31.530Z",
+      "description": "Smakowita zupa",
+      "name": "Zupa grzybowa z grzankami",
+      "preparation_time": 12,
+      "is_vegetarian": false,
+      "price": "12.99"
+    }
+  },
+  {
+    "model": "menu.dish",
+    "pk": 2,
+    "fields": {
+      "creation_date": "2018-11-21T19:40:55.233Z",
+      "modification_date": "2018-11-21T19:40:55.233Z",
+      "description": "Smakowite krokiety z miesem",
+      "name": "Krokiety z mi\u0119sem",
+      "preparation_time": 20,
+      "is_vegetarian": false,
+      "price": "15.76"
+    }
+  },
+  {
+    "model": "menu.dish",
+    "pk": 3,
+    "fields": {
+      "creation_date": "2018-11-21T22:35:05.545Z",
+      "modification_date": "2018-11-23T16:37:19.855Z",
+      "description": "Niesamowity smak.",
+      "name": "Kark\u00f3wka z grilla",
+      "preparation_time": 40,
+      "is_vegetarian": false,
+      "price": "40.98"
+    }
+  },
+  {
+    "model": "menu.dish",
+    "pk": 4,
+    "fields": {
+      "creation_date": "2018-11-21T22:35:26.759Z",
+      "modification_date": "2018-11-23T14:22:59.177Z",
+      "description": "Nibywa\u0142a.",
+      "name": "Wieprzowina po seczua\u0144sku",
+      "preparation_time": 30,
+      "is_vegetarian": false,
+      "price": "12.29"
+    }
+  },
+  {
+    "model": "menu.dish",
+    "pk": 5,
+    "fields": {
+      "creation_date": "2018-11-23T17:02:52.152Z",
+      "modification_date": "2018-11-23T17:02:52.152Z",
+      "description": "MAjestatyczny stek wo\u0142owy podawany z frytkami.",
+      "name": "Stek wo\u0142owy majestat",
+      "preparation_time": 60,
+      "is_vegetarian": false,
+      "price": "59.99"
+    }
+  },
+  {
+    "model": "menu.dish",
+    "pk": 6,
+    "fields": {
+      "creation_date": "2018-11-23T17:03:24.710Z",
+      "modification_date": "2018-11-23T17:03:24.710Z",
+      "description": "Wy\u015bmienita zupa og\u00f3rkowa ze \u015bwie\u017cych og\u00f3rk\u00f3w  z ogrodu.",
+      "name": "Zupa og\u00f3rkowa",
+      "preparation_time": 20,
+      "is_vegetarian": false,
+      "price": "19.99"
+    }
+  },
+  {
+    "model": "menu.dish",
+    "pk": 7,
+    "fields": {
+      "creation_date": "2018-11-23T17:04:14.519Z",
+      "modification_date": "2018-11-23T17:04:14.519Z",
+      "description": "Sled\u017a podawany jak za dawnych czas\u00f3w na kaszucach.",
+      "name": "\u015aled\u017a po kaszubsku",
+      "preparation_time": 30,
+      "is_vegetarian": false,
+      "price": "29.99"
+    }
+  }
+]
