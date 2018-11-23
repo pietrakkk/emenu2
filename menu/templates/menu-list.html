@@ -24,8 +24,8 @@
             <tr class="menu-item">
                 <th scope="row">{{menu.id}}</th>
                 <td>{{ menu.name }}</td>
-                <td>{{ menu.creation_date|date }}</td>
-                <td>{{ menu.modification_date|date }}</td>
+                <td>{{ menu.creation_date|date:'Y-m-d H:i' }}</td>
+                <td>{{ menu.modification_date|date:'Y-m-d H:i' }}</td>
                 <td>{{ menu.dishes_count }}</td>
             </tr>
             {% endfor %}
@@ -52,13 +52,12 @@
             <a href="/"> <- Powrót</a>
         </div>
         <div class="col-md-12">
-            <h2 class="menu-name"></h2>
-            <hr class="divider">
+            <h1 class="menu-name"></h1>
             <p class="menu-description"></p>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 card">
             <h3>Karta dań:</h3>
-            <table class="table table-bordered">
+            <table class="table">
                 <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -66,6 +65,7 @@
                     <th scope="col">Czas przygotowania</th>
                     <th scope="col">Danie vegetariańskie</th>
                     <th scope="col">Cena</th>
+                    <th scope="col"></th>
                 </tr>
                 </thead>
                 <tbody class="dish-row">

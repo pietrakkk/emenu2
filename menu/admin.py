@@ -10,7 +10,7 @@ class DishModelForm(forms.ModelForm):
     price = forms.DecimalField(min_value=0)
 
     class Meta:
-        fields = ('name', 'description', 'preparation_time', 'price', 'is_vegetarian',)
+        fields = ('name', 'description', 'preparation_time', 'price', 'is_vegetarian', 'picture')
         model = Dish
 
 

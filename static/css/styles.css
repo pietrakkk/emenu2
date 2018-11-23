@@ -12,6 +12,15 @@ body{
 
 
 .menu-description{
-    font-size: 16px;
-    font-style: arial;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.menu-row{
+    height: 150px;
+    font-size: 25px;
+}
+
+.card{
+    padding-top: 20px;
 }

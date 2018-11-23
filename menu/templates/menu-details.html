@@ -5,34 +5,38 @@
         <a href="/"> <- Powrót</a>
     </div>
     <div class="col-md-12">
-        <h2 class="menu-name">{{object.name}}</h2>
-        <hr class="divider">
+        <h1 class="menu-name">{{object.name}}</h1>
         <p class="menu-description">{{object.description}}</p>
     </div>
-    <div class="col-md-12">
-        <h3>Karta dań:</h3>
-        <table class="table table-bordered">
+    <div class="col-md-12 card">
+        <table class="table table-striped">
             <thead>
             <tr>
-                <th scope="col">#</th>
                 <th scope="col">Nazwa</th>
                 <th scope="col">Czas przygotowania</th>
                 <th scope="col">Danie vegetariańskie</th>
+                <th scope="col"></th>
                 <th scope="col">Cena</th>
             </tr>
             </thead>
             <tbody class="dish-row">
 
             {% for dish in object.dishes.all %}
-            <tr>
-                <th scope="row">{{dish.id}}</th>
+            <tr class="menu-row">
                 <td>{{ dish.name }}</td>
-                <td>{{ dish.preparation_time }}</td>
+                <td>{{ dish.preparation_time }} min</td>
                 <td>
                     {% if dish.id_vegetarian %}
                     Tak
                     {% else %}
                     Nie
+                    {% endif %}
+                </td>
+                <td>
+                    {% if dish.picture %}
+                    <img src="{{ dish.picture.url }}" width=250 height=150>
+                    {% else %}
+                    <img src="/static/img/no_img.svg" width=250 height=150>
                     {% endif %}
                 </td>
                 <td>{{ dish.price }}</td>

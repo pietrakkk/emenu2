@@ -6,7 +6,7 @@ from menu.models import Menu, Dish
 class DishSerializer(serializers.ModelSerializer):
     class Meta:
         model = Dish
-        fields = ('id', 'name', 'preparation_time', 'is_vegetarian', 'price')
+        fields = ('id', 'name', 'preparation_time', 'is_vegetarian', 'price', 'picture')
 
 
 class MenuSerializer(serializers.ModelSerializer):

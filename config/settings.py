@@ -10,11 +10,11 @@ env = environ.Env(
 
 environ.Env.read_env()
 
+ALLOWED_HOSTS = env('ALLOWED_HOSTS')
+
 DEBUG = env('DEBUG')
 
 SECRET_KEY = env('SECRET_KEY')
-
-ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -96,7 +96,11 @@ USE_L10N = True
 
 USE_TZ = True
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static/'),
-)
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/media/'
