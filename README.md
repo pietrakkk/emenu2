@@ -4,7 +4,7 @@ Aplikacja do zarządzania kartami menu.
 
 ## Instalacja
 
-Stwórz plik konfiguracyjny .env w katalogu /config, bądź skopiuj .env.example.
+Stwórz plik konfiguracyjny .env w katalogu /config, bądź skopiuj .env.example do .env
 
 Stwórz środowisko:
 
