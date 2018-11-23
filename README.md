@@ -10,7 +10,7 @@ Stwórz środowisko:
 
 ```virtualenv venv -p python3```
 
-Zainstaluj bibliotekis:
+Zainstaluj biblioteki:
 
 ```. venv/bin/activate && pip install -r requirements.txt```
 
